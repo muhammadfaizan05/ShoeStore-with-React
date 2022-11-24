@@ -1,0 +1,105 @@
+.cart_container{
+    width: 90%;
+    margin: auto;
+}
+.cartreturningdiv{
+    width: 80%;
+    margin: auto;
+    display: block;
+    position: relative;
+    background-color: skyblue;
+    border-bottom: 5px dotted red;
+}
+.cart_container .desc_box{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.cart_container .pricetag{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+.cartreturningdiv .cart_img{
+    width: 15%;
+    height: 150px;
+    border-radius: 50%;
+    /* transform: rotate(-90deg); */
+}
+.quantity{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+.textes span{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+
+.noitemnotigication{
+    margin-top: 15%;
+    text-decoration: underline;
+}
+.sademoji{
+    width: 5%;
+}
+.returningdiv{
+    position: relative;
+}
+.deletebox{
+    width: 30px;
+    color: red;
+    font-weight: 900;
+    font-size: larger;
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid rgb(233, 139, 17);
+    left: 93%;
+    top: 5%;
+}
+.none{
+    display: none;
+}
+.cart_container .plusicon{
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+}
+.cart_container .decrease{
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: aliceblue;
+}
+.cartimg{
+    width: 3.5%;
+}
+
+@media (max-width:850px){
+    .cart_container .desc_box{ left: 25%; top: 60%; }
+    .cart_container .pricetag{ right: 7%; top: 8%; }
+    .cartreturningdiv .cart_img{width: 23%;  height: 120px; }
+    .quantity{top: 30%;}
+    .cart_container .plusicon{width: 35px;height: 35px;}
+    .cart_container .decrease{width: 30px;height: 30px;}
+}
+@media (max-width:500px){
+    .cart_container .desc_box{ display: none;}
+    .cart_container .pricetag{ right: 7%; top: 8%; }
+    .cartreturningdiv .cart_img{width: 35%;  height: 120px; }
+    .cart_container .plusicon{width: 35px;height: 35px;}
+    .cart_container .decrease{width: 30px;height: 30px;}
+}
+@media (max-width:450px){
+    .cart_container{ width: 95%;    }
+    .cartreturningdiv{ width: 93%; border-bottom: none;    }
+    .cartreturningdiv .cart_img{width: 35%;  height: 120px; }
+    .cart_container .plusicon{width: 35px;height: 35px; right: 2%; bottom: 20%;}
+    .cart_container .decrease{width: 27px;height: 27px; }
+}

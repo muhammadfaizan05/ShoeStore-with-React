@@ -1,0 +1,76 @@
+.title{
+    text-align: left;
+    text-decoration: underline;
+}
+.shoescontainer{
+    width: 95%;
+    margin: auto;
+    background-color: rgb(231, 222, 222);
+    /* position: relative; */
+}
+.images{
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2px;
+    column-gap: 1px;
+    justify-content: space-between;
+  
+}
+.images img{
+    cursor: pointer;
+    float: left;
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.returningdiv{
+    width: 20%;
+    position: relative;
+}
+.pricetag{
+    position: absolute;
+    bottom: 0%;
+}
+.detailedcontainer img{
+    width: 95%;
+}
+.returningdiv .cart_sign{
+    position: absolute;
+    /* width: 20px; */
+    z-index: 1;
+    right: 0%;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px){
+
+    
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3px;
+    column-gap: 1px;
+    justify-content: space-between;
+  
+}
+
+.returningdiv{
+    width: 47%;
+    position: relative;
+    object-fit: cover;
+}
+.images img{
+    cursor: pointer;
+    float: left;
+    width:  100%;
+    height: 100%;
+   
+}
+}

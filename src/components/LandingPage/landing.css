@@ -1,0 +1,134 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.landingcontainer {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.sliderimg {
+    width: 100%;
+}
+
+.articles {
+    width: 98%;
+    margin: auto;
+    margin-top: 7%;
+    background-color: rgb(29, 115, 155);
+    display: flex;
+    justify-content: space-around;
+}
+
+.artimg {
+    cursor: pointer;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 5px;
+}
+
+/* .footer {
+    background-color: black;
+    border-radius: 5%;
+}
+
+.footer h3 {
+    color: white;
+} */
+
+@media only screen and (max-width: 600px){
+
+    .articles img {
+        width: 90%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .articles {
+        width: 99%;
+        margin-top: 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .artimg {
+        cursor: pointer;
+        /* height: 150px; */
+        /* object-fit: cover; */
+    }
+
+}
+@media screen and (max-width:400px) {
+    .articles {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .articles img {
+        flex-grow: 1;
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+.banner_07 {
+    margin: auto;
+    width: 99%;
+    margin-top: 5%;
+}
+
+.banner_07 img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Slider css */

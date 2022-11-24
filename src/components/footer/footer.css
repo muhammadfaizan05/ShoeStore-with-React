@@ -1,0 +1,228 @@
+footer{
+    width: 100vw;
+    background-color: rgb(75, 72, 72);
+    margin-top: 5%;
+    color: white;
+}
+.banner{
+    width: 100vw;
+    height: 130px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.banner:hover img{
+    transform: rotate(30deg) scale(0.8) ;
+}
+.banner img{
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    margin-left:25% ;
+    transition: all ease 0.4s;
+}
+.whitepart{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+/* .banner img:hover{
+    transform: scale(0.8);
+} */
+.text_section{
+    width: 30%;
+    color: white;
+    margin-left: 5%;
+    text-align: left;
+}
+.text_section font,span{
+    font-size: 1.3rem;
+}
+.text_section span{
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.lower_footer{
+    margin:2%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+.section_1{
+    width: 33%;
+    text-align: left;
+}
+.section_1 input{
+    padding: 3%;
+}
+.section_2{
+    cursor: pointer;
+}
+.section_2 span,.section_3 span,.section_4 span{
+    border-bottom: 0.5px dotted rgb(233, 185, 225);
+    font-weight:100 ;
+}
+.section_2 span:hover,.section_3 span:hover,.section_4 span:hover{
+    border-bottom: 0.7px solid black;
+    cursor: pointer;
+}
+/* CSS */
+.button-92 {
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+
+.whitepart{
+    /* background: #333; */
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h1 {
+    color: black;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+
+
+
+
+
+  hr{
+    display:block;
+    margin:0 auto;
+    height:5px;
+    width:105px;
+    border:none;
+    border-radius: 3px;
+    border-left:1200px solid #f00000;
+    animation: KITTAnim 1s infinite ease-in-out alternate;
+    /* margin-bottom: 2%; */
+  }
+
+
+  @media (max-width:700px) {
+   .banner{
+      width: 100vw;
+      height: 130px;
+      background-color: blue;
+      display: flex;
+      align-items: center;
+  }
+  .banner img{
+      margin-left:10%;
+  }
+  .text_section{
+      width: 80%;
+      color: white;
+      margin-left: 1%;
+      text-align: left;
+  }
+  .text_section font,span{
+      font-size: 1.1rem;
+  }
+  a{
+   text-decoration: underline;
+  }
+  .whitepart{
+   height: 0.9px;
+  }
+  /* Lower Footer ki css  */
+  .lower_footer{
+   margin:1%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.section_1{
+   width: 100%;
+   flex-grow: 1;
+   margin: 1%;
+   text-align: left;
+}
+.section_1 input{
+   padding: 3%;
+}
+.section_2{
+   cursor: pointer;
+}
+.section_2 span,.section_3 span,.section_4 span{
+   border-bottom: 0.5px dotted rgb(233, 185, 225);
+   font-weight:100 ;
+}
+.section_2,.section_3,.section_4{
+   width: 30%;
+   margin: 0%;
+}
+   
+  }
+  @media (max-width:400px){
+  .banner img{
+      margin-left:5%;
+  }
+  .text_section{
+      width: 90%;
+  }
+  .text_section font,span{
+      font-size: 1rem;
+  }
+  .section_3{
+   display: none;
+  }
+  }
